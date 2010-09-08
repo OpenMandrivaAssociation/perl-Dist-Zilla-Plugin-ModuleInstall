@@ -1,9 +1,11 @@
 %define upstream_name    Dist-Zilla-Plugin-ModuleInstall
 %define upstream_version 0.01029216
 
+%define _requires_exceptions perl(inc::Module::Install)
+
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 3
 
 Summary:    Build Module::Install based Distributions with Dist::Zilla
 License:    GPL+ or Artistic
