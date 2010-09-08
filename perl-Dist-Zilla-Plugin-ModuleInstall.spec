@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Build Module::Install based Distributions with Dist::Zilla
 License:    GPL+ or Artistic
@@ -17,6 +17,7 @@ BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(Module::Install)
 BuildRequires: perl(Moose)
 BuildRequires: perl(Moose::Autobox)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -31,11 +32,10 @@ It is at present a very minimal feature set, but it works.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
-%{make}
+%make
 
 %check
-%{make} test
+%make test
 
 %install
 rm -rf %buildroot
@@ -46,8 +46,6 @@ rm -rf %buildroot
 
 %files
 %defattr(-,root,root)
-%doc Changes LICENSE README
+%doc Changes LICENSE README META.yml
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
