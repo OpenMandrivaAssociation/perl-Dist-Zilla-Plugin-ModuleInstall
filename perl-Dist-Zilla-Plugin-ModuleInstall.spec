@@ -1,5 +1,5 @@
 %define upstream_name    Dist-Zilla-Plugin-ModuleInstall
-%define upstream_version 0.01054020
+%define upstream_version 0.02000000
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(inc::Module::Install\\)'
@@ -9,7 +9,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	Build Module::Install based Distributions with Dist::Zilla
 License:	GPL+ or Artistic
@@ -50,4 +50,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc Changes LICENSE README META.yml
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
+
 

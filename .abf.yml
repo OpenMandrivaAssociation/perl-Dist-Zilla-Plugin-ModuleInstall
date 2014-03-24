@@ -1,2 +1,4 @@
+removed_sources:
+  Dist-Zilla-Plugin-ModuleInstall-0.01054020.tar.gz: e6ea4884a95b13f8e49b12f38e7b7962e2e95401
 sources:
-  "Dist-Zilla-Plugin-ModuleInstall-0.01054020.tar.gz": e6ea4884a95b13f8e49b12f38e7b7962e2e95401
+  Dist-Zilla-Plugin-ModuleInstall-0.02000000.tar.gz: 98b21f2fde716c081aa7fca4e94d004c4cc41af5
